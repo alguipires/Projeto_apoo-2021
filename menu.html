@@ -1,0 +1,52 @@
+<script>
+  (function ($) {
+    $(function () {
+      $(".dropdown-trigger").dropdown();
+      $('.sidenav').sidenav();
+    }); // end of document ready
+  })(jQuery); // end of jQuery name space
+</script>
+<!-- inicio nav-->
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content blue darken-3">
+  <li><a href="#">Trabalhe com a gente</a></li>
+  <li><a href="#">Fale com a gente</a></li>
+  <li><a href="#">Suporte</a></li>
+  <li><a href="func_integrador.html">Funcinario Relatorio</a></li>
+</ul>
+
+<div class="navbar-fixed">
+  <nav class="blue darken-3">
+    <div class="centraliza-nav">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">Gilmar's Parking</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">O Gilmar's Parking</a></li>
+          <li><a href="reserva.html">Reservar vagas</a></li>
+          <li><a href="minhas-reservas.html">Minhas reservas</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Contato<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="waves-effect waves-light btn blue darken-4" href="login.html"><i
+                class="material-icons left">lock</i> Area
+              Restrita</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#">O Gilmar's Parking</a></li>
+  <li><a href="reserva.html">Reservar vagas</a></li>
+  <li><a href="minhas-reservas.html">Minhas reservas</a></li>
+  <li><a href="#">Trabalhe com a gente</a></li>
+  <li><a href="#">Fale com a gente</a></li>
+  <li><a href="#">Suporte</a></li>
+  <li><a href="func_integrador.html">Funcinario Relatorio</a></li>
+  <li><a class="waves-effect waves-light btn blue darken-4" href="login.html"><i class="material-icons left">lock</i>
+      Area
+      Restrita</a></li>
+</ul>
+<!-- fim nav-->

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gilmar's</title>
+    <!--Cor da aba do navegador-->
+    <meta name="theme-color" content="#1565c0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1565c0">
+    <meta name="msapplication-navbutton-color" content="#1565c0">
+    <!--Import Icons Font Awasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/libraries/materialize/css/materialize.min.css"
+        media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icone da aba-->
+    <link rel="icon" type="image/jpg" href="#">
+    <!--CSS Custom-->
+    <link type="text/css" rel="stylesheet" href="assets/resources/styles/custom.css" />
+
+    <!-- baixar jquery e js antes para carregar as paginas footer e menu-->
+
+    <!-- carregando jQuery -->
+    <script type="text/javascript" src="assets/libraries/jquery/jquery-3.3.1.min.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="assets/libraries/materialize/js/materialize.min.js"></script>
+
+    <!--Jquery plugin mask-->
+    <script type="text/javascript" src="assets/libraries/jquery/jquery.mask.min.js"></script>
+
+    <!-- meu script -->
+    <script type="text/javascript" src="assets/resources/scripts/init.js"></script>
+    <!-- page script -->
+    <script type="text/javascript" src="assets/resources/scripts/curriculo.js"></script>
+
+
+</head>
+
+<body>
+    <!-- inicio nav-->
+    <div id="menu"></div>
+    <!-- fim nav-->
+
+    <!--Main inicio-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="section">
+                    <div class="light-green darken-1">
+                        <div class="blue darken-4 white-text center tam-font-edit">ENVIAR CURRÍCULO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div class="container">
+        <div class="row">
+            <form id="form-curriculo" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="input-name" type="text" class="validate" maxlength="80"
+                            pattern="^(?![ ])(?!.*[ ]{2})((?:e|da|do|das|dos|de|d'|D'|la|las|el|los)\s*?|(?:[A-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'][^\s]*\s*?)(?!.*[ ]$))+$"
+                            >
+                        <label for="input-name">Nome Completo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label for="">Gênero</label>
+                        <p>
+                            <label for="input-gender-masculine">
+                                <input id="input-gender-masculine" name="gender-group" type="radio" value="M" />
+                                <span>Masculino</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input id="input-gender-feminine" name="gender-group" type="radio" value="F" />
+                                <span>Feminino</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="input-telefone" type="tel" class="validate" maxlength="15"
+                            pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="Ex.: (00) 00000-0000" >
+                        <label for="input-telefone">Telefone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="input-city" type="tel" class="validate" maxlength="50" placeholder="Ex.: Guarapuava"
+                            required>
+                        <label for="input-city">Cidade</label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="input-email" type="email" class="validate" maxlength="40"
+                            pattern="^([\w\-]+\.)*[\w\- ]+@([\w\- ]+\.)+([\w\-]{2,3})$" placeholder="seu@email.com"
+                            required>
+                        <label for="input-email">Email</label>
+                        <span class="helper-text" data-error="Favor digitar e-mail valido"
+                            data-success="Correto">ajuda</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label for="">Área de interesse</label>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="interest-group" value="programador" />
+                                <span>Programador</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="interest-group" value="designer" />
+                                <span>Designer</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="interest-group" value="analista" />
+                                <span>Analista</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="interest-group" value="suporte" />
+                                <span>Suporte</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="interest-group" value="outros" />
+                                <span>Outros</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea maxlength="3000" id="input-textarea" class="materialize-textarea" required></textarea>
+                        <label for="input-textarea">Sua mensagem</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button type="submit" id="btn-submit" class="btn waves-effect blue darken-4 white-text">Enviar<i
+                                class="material-icons right">send</i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Main fim-->
+    <!-- inicio footer-->
+    <div id="footer"></div>
+    <!-- fim footer-->
+
+    <!-- meu script -->
+    <script type="text/javascript" src="assets/resources/scripts/curriculo.js"></script>
+</body>
+</html>

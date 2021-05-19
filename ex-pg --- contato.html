@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gilmar's</title>
+    <!--Cor da aba do navegador-->
+    <meta name="theme-color" content="#1565c0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1565c0">
+    <meta name="msapplication-navbutton-color" content="#1565c0">
+    <!--Import Icons Font Awasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+          <!--Import Google Icon Font-->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!--Import materialize.css-->
+          <link type="text/css" rel="stylesheet" href="assets/libraries/materialize-v1.0.0/materialize/css/materialize.min.css"  media="screen,projection"/>
+    
+          <!--Let browser know website is optimized for mobile-->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <!--Icone da aba-->
+          <link rel="icon" type="image/jpg" href="#">
+          <!--CSS Custom-->
+          <link type="text/css" rel="stylesheet" href="assets/resources/styles/custom.css" />
+          <!-- baixar jquery e js antes para carregar as paginas footer e menu-->
+
+          <!-- carregando jQuery -->
+          <script type="text/javascript" src="assets/libraries/jquery/jquery-3.3.1.min.js"></script>
+          <script type="text/javascript" src="assets/libraries/jquery/jquery.mask.min.js"></script>
+
+          <!--JavaScript at end of body for optimized loading-->
+          <script type="text/javascript" src="assets/libraries/materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+          
+          <!-- meu script -->
+          <script type="text/javascript" src="assets/resources/scripts/init.js"></script>
+
+</head>
+
+<body>
+
+    <div id="content-page">
+        <!-- inicio nav-->
+        <div id="menu"></div>
+        <!-- fim nav-->
+
+        <!--inicio pagina main-->
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="section">
+                        <div class="light-green darken-1">
+                            <div class="blue darken-4 white-text center tam-font-edit">Contato</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section"></div>
+        <div class="section"></div>
+
+        <div class="container">
+            <div class="row">
+                <form id="form-contato" action="" class="col s12" onsubmit="salvaReclamacao()">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="input-name" type="text" class="validate" maxlength="60" autofocus
+                                pattern="^(?![ ])(?!.*[ ]{2})((?:e|da|do|das|dos|de|d'|D'|la|las|el|los)\s*?|(?:[A-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'][^\s]*\s*?)(?!.*[ ]$))+$"
+                                required>
+                            <label for="input-name">Nome Completo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">store</i>
+                            <input id="input-empresa" type="text" class="validate" maxlength="60" autofocus pattern="^(?![ ])(?!.*[ ]{2})((?:e|da|do|das|dos|de|d'|D'|la|las|el|los)\s*?|(?:[A-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'][^\s]*\s*?)(?!.*[ ]$))+$"
+                                required>
+                            <label for="input-empresa">Empresa</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                                <i class="material-icons prefix">store</i>
+                            <select id="select-company">
+                                <option disabled selected>Escolha uma opção</option>
+
+                                <option value="formaturas-eventos">Formaturas e Eventos</option>
+                                <option value="clinica-veterinaria">Clínica Veterinária</option>
+                                <option value="bar-restaurante">Bar e Restaurante</option>
+                                <option value="loja-confeccoes">Loja de Confecções</option>
+                                <option value="produtos-odontologicos">Produtos Odontológicos</option>
+                                <option value="grafica">Gráfica e Laboratório de impressão</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                            <label id="select-company">Ramo da Atividade</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="input-telefone" type="tel" class="validate" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"
+                            placeholder="(42) 99999-9999" required>
+                            <label for="input-telefone">Telefone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">mail_outline</i>
+                            <input id="input-email" type="email" class="validate" maxlength="40"
+                                pattern="^([\w\-]+\.)*[\w\- ]+@([\w\- ]+\.)+([\w\-]{2,3})$" placeholder="seu@email.com"
+                                onfocus="ganhaFocus('input-email')" onblur="perdeFocus('input-email')" required>
+                            <label for="input-email">Email</label>
+                            <span class="helper-text" data-error="Favor digitar e-mail valido"
+                                data-success="Correto">ajuda</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea maxlength="3000" id="input-textarea" class="materialize-textarea" required></textarea>
+                            <label for="input-textarea">Mensagem</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button id="btn-submit" class="btn waves-effect blue darken-4 white-text" type="submit"
+                                name="action" name="action">Enviar<i class="material-icons right">send</i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--fim pagina main-->
+    </div>
+    <!-- inicio footer-->
+    <div id="footer"></div>
+    <!-- fim footer-->
+
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger display-none-edit" href="#modal2">Modal</a>
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Formulario enviado! Sr.(a) <span id="nome_mostrar"> </span> </h4>
+        </div>
+        <div class="modal-footer">
+            <a href="index.html" class="modal-close waves-effect waves-green btn-flat">Sair</a>
+            <a href="contato.html" class="modal-close waves-effect waves-green btn-flat">Nova Reclamação</a>
+            <!--<a href="contato.html" class="modal-close waves-effect waves-green btn-flat">Avisar</a>-->
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

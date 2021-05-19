@@ -1,0 +1,61 @@
+.font-icon-social-midia-edit {
+    font-size: 2em;
+}
+
+.margin-top-bottom-edit {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.padding-top-bottom-edit {
+    padding-bottom: 30%;
+    padding-top: 30%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.centraliza-nav{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tam-font-edit {
+    font-size: 2em;
+}
+
+.strong-font-edit {
+    font-weight: 500;
+}
+
+.display-none-edit {
+    display: none;
+}
+
+.div-login{
+    display: inline-block; 
+    padding: 32px 48px 0px 48px; 
+    border: 1px solid #EEE;
+}
+
+#flutuar-esqueceu-senha{
+    float: right;
+}
+
+#body-login{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #fff;
+  }
+
+#main-login{
+  flex: 1 0 auto;
+}

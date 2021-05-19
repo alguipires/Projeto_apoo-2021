@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gilmar's</title>
+    <!--Cor da aba do navegador-->
+    <meta name="theme-color" content="#1565c0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1565c0">
+    <meta name="msapplication-navbutton-color" content="#1565c0">
+    <!--Import Icons Font Awasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+          <!--Import Google Icon Font-->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!--Import materialize.css-->
+          <link type="text/css" rel="stylesheet" href="assets/libraries/materialize-v1.0.0/materialize/css/materialize.min.css"  media="screen,projection"/>
+    
+          <!--Let browser know website is optimized for mobile-->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <!--Icone da aba-->
+          <link rel="icon" type="image/jpg" href="#">
+          <!--CSS Custom-->
+          <link type="text/css" rel="stylesheet" href="assets/resources/styles/custom.css" />
+          <!-- baixar jquery e js antes para carregar as paginas footer e menu-->
+
+          <!-- carregando jQuery -->
+          <script type="text/javascript" src="assets/libraries/jquery/jquery-3.3.1.min.js"></script>
+          <script type="text/javascript" src="assets/libraries/jquery/jquery.mask.min.js"></script>
+
+          <!--JavaScript at end of body for optimized loading-->
+          <script type="text/javascript" src="assets/libraries/materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+          
+          <!-- meu script -->
+          <script type="text/javascript" src="assets/resources/scripts/init.js"></script>
+          <!-- page script -->
+          <script type="text/javascript" src="assets/resources/scripts/reserva.js"></script>
+
+</head>
+
+<body>
+    <!-- inicio nav-->
+    <div id="menu"></div>
+    <!-- fim nav-->
+
+    <!--Main inicio-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="section">
+                    <div class="light-green darken-1">
+                        <div class="blue darken-4 white-text center tam-font-edit">RESERVAR VAGAS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div class="container">
+        <div class="row">
+            <form action="#" id="form-reserva" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="data-inicio" type="text" class="datepicker">
+                        <label for="data-inicio">Data de check-in</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Selecione a hora de chegada</option>
+                        <option value="1">1:00</option>
+                        <option value="2">1:30</option>
+                        <option value="3">2:00</option>
+                        <option value="3">2:30</option>
+                        <option value="3">3:00</option>
+                        <option value="3">3:30</option>
+                        <option value="3">4:00</option>
+                        <option value="3">4:30</option>
+                        <option value="3">5:00</option>
+                        <option value="3">5:30</option>
+                        <option value="3">6:00</option>
+                        <option value="3">6:30</option>
+                        <option value="3">7:00</option>
+                        <option value="3">7:30</option>
+                        </select>
+                        <label>Selecione a hora de chegada</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="data-final" type="text" class="datepicker">
+                        <label for="data-final">Data de check-out</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select>
+                        <option value="" disabled selected>Selecione a hora de saida</option>
+                        <option value="1">1:00</option>
+                        <option value="2">1:30</option>
+                        <option value="3">2:00</option>
+                        <option value="3">2:30</option>
+                        <option value="3">3:00</option>
+                        <option value="3">3:30</option>
+                        <option value="3">4:00</option>
+                        <option value="3">4:30</option>
+                        <option value="3">5:00</option>
+                        <option value="3">5:30</option>
+                        <option value="3">6:00</option>
+                        <option value="3">6:30</option>
+                        <option value="3">7:00</option>
+                        <option value="3">7:30</option>
+                        </select>
+                        <label>Selecione a hora de saida</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="input-modelo-carro" type="text" class="validate" maxlength="20"
+                            pattern="^(?![ ])(?!.*[ ]{2})((?:e|da|do|das|dos|de|d'|D'|la|las|el|los)\s*?|(?:[A-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'][^\s]*\s*?)(?!.*[ ]$))+$"
+                            >
+                        <label for="input--modelo-carro">Modelo do Carro</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="input-placa-carro" type="text" class="validate" maxlength="20"
+                            pattern="^(?![ ])(?!.*[ ]{2})((?:e|da|do|das|dos|de|d'|D'|la|las|el|los)\s*?|(?:[A-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'][^\s]*\s*?)(?!.*[ ]$))+$"
+                            >
+                        <label for="input-placa-carro">Placa do Carro</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <label for="">Tipo de Vaga</label>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tipo-de-vaga" value="Coberta" />
+                                <span>Coberta</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="tipo-de-vaga" value="sem cobertura" />
+                                <span>Sem cobertura</span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button type="submit" id="btn-submit" class="btn waves-effect blue darken-4 white-text">Reservar<i
+                                class="material-icons right">send</i></button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    
+
+    <!--Main fim-->
+    <!-- inicio footer-->
+    <div id="footer"></div>
+    <!-- fim footer-->
+
+</body>
+
+</html>
